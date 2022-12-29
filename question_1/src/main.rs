@@ -10,4 +10,5 @@ fn main() {
         .filter(|&num| (num % 3 == 0) || (num % 5 == 0))
         .sum();
     println!("The sum is {}", sum);
+    // The sum is 233168
 }
