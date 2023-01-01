@@ -1,0 +1,1 @@
+C:\Users\Cosmic\Documents\Rust\Rust-Project-Euler\question_3\target\debug\question_3.exe: C:\Users\Cosmic\Documents\Rust\Rust-Project-Euler\question_3\src\main.rs C:\Users\Cosmic\Documents\Rust\Rust-Project-Euler\utils\primes\src\lib.rs
