@@ -1,1 +1,0 @@
-c:\Users\Cosmic\Documents\Rust\Rust-Project-Euler\utils\primes\target\debug\primes.exe: c:\Users\Cosmic\Documents\Rust\Rust-Project-Euler\utils\primes\src\lib.rs c:\Users\Cosmic\Documents\Rust\Rust-Project-Euler\utils\primes\src\main.rs
