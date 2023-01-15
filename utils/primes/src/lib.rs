@@ -51,3 +51,18 @@ pub fn filter_sieve(num: &usize) -> Vec<usize> {
     let primes: Vec<usize> = primes_sieved.keys().cloned().collect();
     primes
 }
+
+pub fn factorise(num: &usize) -> LinkedHashMap<usize, usize> {
+    // Only search till sqrt(num)
+    let primes: Vec<usize> = filter_sieve(&((*num as f64).sqrt() as usize));
+    let mut total = *num;
+    let mut output: LinkedHashMap<usize, usize> = LinkedHashMap::<usize, usize>::new();
+    for p in primes.iter() {
+        while total % p == 0 {
+            total = total / p;
+            *(output.entry(*p).or_insert(0)) += 1
+        }
+    }
+    // Returns factorisation if it exists otherwise an empty hashmap
+    return output;
+}
