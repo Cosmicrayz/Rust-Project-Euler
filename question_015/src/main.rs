@@ -20,5 +20,6 @@ fn calc_paths(m: usize, n: usize) -> usize {
 }
 
 fn main() {
-    println!("{}", calc_paths(20, 20));
+    println!("The number of total paths is {}", calc_paths(20, 20));
+    // The number of total paths is 137846528820
 }
