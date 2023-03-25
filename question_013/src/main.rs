@@ -115,10 +115,10 @@ fn main() {
             .chars()
             .map(|x| x.to_digit(10).unwrap() as usize)
             .collect::<Vec<usize>>();
-        println!("{} and {}", start.digits.len(), vec.len());
-        let mut padded_vec: Vec<usize> = vec![0; start.digits.len() - vec.len()];
-        padded_vec.extend(vec);
-        start = start + BigNum { digits: padded_vec }
+        // let mut padded_vec: Vec<usize> = vec![0; start.digits.len() - vec.len()];
+        // padded_vec.extend(vec);
+        //println!("{}", vec.len());
+        start = start + BigNum { digits: vec }
     }
     println!(
         "The first 10 digits of the sum is {:?}",
