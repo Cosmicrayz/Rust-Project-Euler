@@ -69,10 +69,12 @@ pub fn factorise(num: &usize) -> LinkedHashMap<usize, usize> {
 
 pub fn get_divisor_pairs(num: &usize) -> Vec<(usize, usize)> {
     let mut pairs: Vec<(usize, usize)> = Vec::new();
-    for i in (1..(*num as f64).sqrt() as usize) {
-        if num % i == 0 {
-            pairs.push((i, num / i))
-        }
-    }
+    (1..(*num as f64).sqrt() as usize)
+        .into_iter()
+        .for_each(|i| {
+            if num % i == 0 {
+                pairs.push((i, num / i))
+            }
+        });
     pairs
 }
