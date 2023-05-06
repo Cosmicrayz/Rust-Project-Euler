@@ -76,5 +76,8 @@ pub fn get_divisor_pairs(num: &usize) -> Vec<(usize, usize)> {
                 pairs.push((i, num / i))
             }
         });
+    if pairs.len() == 0 {
+        pairs.push((1, *num))
+    }
     pairs
 }
